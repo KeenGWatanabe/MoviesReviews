@@ -4,7 +4,6 @@ const movieTitle = url.searchParams.get("title")
 
 const APILINK = 'https://review-backend.rger1.repl.co/api/v1/reviews/';
 
-
 const main = document.getElementById("section");
 const title = document.getElementById("title");
 
@@ -44,7 +43,7 @@ function returnReviews(url){
               <div class="card" id="${review._id}">
                 <p><strong>Review: </strong>${review.review}</p>
                 <p><strong>User: </strong>${review.user}</p>
-                <p><a href="#" onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
+                <p><a href="#"onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>
               </div>
             </div>
           </div>
